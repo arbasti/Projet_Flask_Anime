@@ -1,0 +1,37 @@
+div.menu{
+width: 80%;
+text-align: left;
+}
+
+span.bouton{
+display: inline-block;
+padding: 0px;
+margin: auto;
+width: 24%;
+vertical-align: middle;
+}
+
+body{
+background-image: url("your_lie_in_april.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+img {
+	width: 50px;
+	display: block;
+	margin: auto;
+}
+
+div.element
+{
+	position: absolute;
+	left: 10%;
+	top: 20%;
+}
+
+li {
+    list-style-type: disc;
+}

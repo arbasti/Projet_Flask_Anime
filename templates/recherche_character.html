@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+	<div class="menu">
+		<span class="bouton"><a href="/"><img src="/static/bouton_accueil.png"></a></span>
+		<span class="bouton"><a href="/recherche"><img src="/static/bouton_loupe.png"></a></span>
+	</div>
+	<div class="element">
+		<h1>Vous êtes à la recherche d'un anime</h1>
+		<p>Veulliez à remplir au moins un des champs disponibles</p>
+		<form action="/recherche_character" method="post">
+			<label>Nom du personnage</label> : <input type="text" name="Character_name" value=""/>
+			<label>Nom de Anime</label> : <input type="text" name="Anime_name" value=""/>
+			<input type="submit" value="Chercher"/>
+		</form>
+	</div>
+{% endblock %}
+

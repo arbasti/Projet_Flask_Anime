@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+	<div class="menu">
+		<span class="bouton"><a href="/"><img src="/static/bouton_accueil.png"></a></span>
+		<span class="bouton"><a href="/recherche"><img src="/static/bouton_loupe.png"></a></span>
+	</div>
+	<div class="element">
+		<h1>Quel recherche voulez-vous faire</h1>
+		<ul>
+			<form action="/recherche4anime">
+				<input type="submit" value="Recherche d'Anime"></form>
+			<form action="/recherche4character">
+				<input type="submit" value="Recherche de Personnage"></form>
+		</ul>
+	</div>
+{% endblock %}
+

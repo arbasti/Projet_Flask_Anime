@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+	<div class="menu">
+		<span class="bouton"><a href="/"><img src="/static/bouton_accueil.png"></a></span>
+		<span class="bouton"><a href="/recherche"><img src="/static/bouton_loupe.png"></a></span>
+	</div>
+	<div class="element">
+		<h1>Vous êtes à la recherche d'un anime</h1>
+		<p>Veulliez à remplir au moins un des champs disponible</p>
+		<form action="/recherche_anime" method="post">
+			<label>Nom de l'anime</label> : <input type="text" name="Anime_name" value=""/>
+			<input type="submit" value="Chercher"/>
+		</form>
+	</div>
+{% endblock %}
+

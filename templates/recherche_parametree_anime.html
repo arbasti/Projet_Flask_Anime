@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+	<div class="menu">
+		<span class="bouton"><a href="/"><img src="/static/bouton_accueil.png"></a></span>
+		<span class="bouton"><a href="/recherche"><img src="/static/bouton_loupe.png"></a></span>
+	</div>
+	<div class="element">
+		{% if anime_name %}
+			<h1>Voici le résultat de la liste d'anime avec le parametre de votre recherche</h1>
+			<p>Voilà les détails de votre recherche</p>
+			<p>Anime : {{anime_name}}
+		{% else %}
+			<h1>Voici la liste des animes dans notre base de donnée</h1>
+		{% endif %}
+		<ul>
+		{% for anime in animes %}
+			<li>id={{ anime[0] }}, Anime={{ anime[1] }}</li>
+		{% endfor %}
+		</ul>
+	</div>
+{% endblock %}
+
